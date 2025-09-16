@@ -130,6 +130,7 @@
     font-size: 1.5rem;
     color: black;
     background-color: rgb(230, 234, 236);
+    box-shadow: 0 0 10px 5px rgba(217, 238, 248, 0.506);
     padding: 20px 40px;
     border-radius: 10px;
 }
