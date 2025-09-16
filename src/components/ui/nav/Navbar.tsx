@@ -1,0 +1,44 @@
+import "styles/ui/nav/Navbar.css"
+
+const burgerClick = () => {
+    let burger = document.querySelector(".navbar-burger")!!
+    const contents = document.querySelector(".cpu-menu")!!
+    contents.classList.toggle("cpu-menu-expanded")
+
+    for (const child of burger.children) {
+        child.classList.toggle("navbar-burger-line-active")
+    }
+}
+
+function Navbar() {
+    return (
+        <div className="cpu-navbar">
+            <h1 className="cpu-logo">CPU</h1>
+            <div className="cpu-menu">
+                <div className="cpu-menu-item">
+                    People
+                    <span className="cpu-menu-item-underline"></span>
+                </div>
+                <div className="cpu-menu-item">
+                    Projects
+                    <span className="cpu-menu-item-underline"></span>
+                </div>
+                <div className="cpu-menu-item">
+                    Seminar
+                    <span className="cpu-menu-item-underline"></span>
+                </div>
+                <div className="cpu-menu-item">
+                    Activities
+                    <span className="cpu-menu-item-underline"></span>
+                </div>
+            </div>
+            <div className="navbar-burger" onClick={() => burgerClick()}>
+              <span className="navbar-burger-line"></span>
+              <span className="navbar-burger-line"></span>
+              <span className="navbar-burger-line"></span>
+            </div>
+        </div>
+    )
+}
+
+export default Navbar

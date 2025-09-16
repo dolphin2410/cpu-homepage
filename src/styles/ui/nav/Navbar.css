@@ -1,0 +1,145 @@
+.cpu-navbar {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    width: 100vw !important;
+}
+
+.cpu-logo {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    cursor: pointer;
+    z-index: 13;
+}
+
+.cpu-logo:hover {
+    transform: rotate(-15deg);
+}
+
+.cpu-menu {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    min-width: 400px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cpu-menu > .cpu-menu-item {
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.cpu-menu > .cpu-menu-item > .cpu-menu-item-underline {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.5s;
+}
+
+.cpu-menu-item:hover .cpu-menu-item-underline {
+    width: 100%;
+}
+
+.navbar-burger {
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.navbar-burger-line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    margin: 4px;
+    border-radius: 10px;
+    background: white;
+}
+
+.navbar-burger-line-active:first-child {
+    animation: rotate_cw 0.2s linear forwards;
+}
+
+.navbar-burger-line-active:nth-child(2) {
+    display: none;
+}
+
+.navbar-burger-line-active:last-child {
+    animation: rotate_ccw 0.2s linear forwards;    
+}
+
+@keyframes rotate_cw {
+    0% {
+        transform: rotate(0) translate(0, 0);
+        
+    }
+    100% {
+        transform: rotate(0.125turn) translateX(4px) translateY(4px);
+    }
+}
+
+@keyframes rotate_ccw {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-0.125turn) translateX(4px) translateY(-4px);
+    }
+}
+
+.cpu-menu {
+    display: none;
+}
+
+.cpu-menu > .cpu-menu-item {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.cpu-menu > .cpu-menu-item:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-burger {
+        display: none;
+    }
+
+    .cpu-menu {
+        display: flex;
+    }
+}
+
+.cpu-menu-expanded {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    min-width: 360px !important;
+}
+
+.cpu-menu-expanded > .cpu-menu-item {
+    text-align: center;
+}
