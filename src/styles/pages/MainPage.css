@@ -12,17 +12,18 @@
     padding-left: 10%;
     padding-right: 10%;
     scroll-snap-align: start;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .mainpage-head-section {
     display: grid;
-    grid-template-rows: 50px 300px 1fr;
+    grid-template-rows: 0px 300px 1fr;
 }
 
 @media screen and (max-width: 720px) {
     .mainpage-head-section {
         display: grid;
-        grid-template-rows: 50px 200px 1fr;
+        grid-template-rows: 0px 200px 1fr;
     }
 }
 
