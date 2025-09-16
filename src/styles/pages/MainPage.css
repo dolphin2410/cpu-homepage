@@ -8,11 +8,11 @@
 .mainpage-section {
     position: relative;
     height: 100vh;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-left: 10%;
     padding-right: 10%;
     scroll-snap-align: start;
-    padding-bottom: env(safe-area-inset-bottom);
+    padding-bottom: 20px;
 }
 
 .mainpage-head-section {
