@@ -3,10 +3,28 @@ import downscroll from "assets/downscroll.svg"
 import Footer from "components/ui/footer/Footer"
 import vision from "assets/vision.png"
 import rocket from "assets/rocket.png"
+import { useEffect, useRef } from "react"
 
 function MainPage() {
+    const appRef = useRef<HTMLDivElement | null>(null)
+
+    useEffect(() => {
+        if (appRef.current) {
+            const _appRef = appRef.current
+            _appRef.addEventListener('scroll', () => {
+                const scrollTop = _appRef.scrollTop;
+
+                if (scrollTop >= window.innerHeight * 5 + 1) {
+                    (document.querySelector(".mainpage-downscroll-help")!! as HTMLElement).style["display"] = "none"
+                } else {
+                    (document.querySelector(".mainpage-downscroll-help")!! as HTMLElement).style["display"] = "flex"
+                }
+            })
+        }
+    }, [appRef])
+
     return (
-        <div className="ui-container mainpage">
+        <div className="ui-container mainpage" ref={appRef}>
             <div className="mainpage-section mainpage-head-section">
                 <h1 className="mainpage-head-title">
                     <span className="mainpage-mini-title">
