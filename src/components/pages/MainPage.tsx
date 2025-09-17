@@ -2,6 +2,7 @@ import "styles/pages/MainPage.css"
 import downscroll from "assets/downscroll.svg"
 import Footer from "components/ui/footer/Footer"
 import vision from "assets/vision.png"
+import rocket from "assets/rocket.png"
 
 function MainPage() {
     return (
@@ -15,6 +16,9 @@ function MainPage() {
                         CPU
                     </span>
                 </h1>
+                <div className="orbit">
+                    <img className="rocket" src={rocket} alt="" />
+                </div>
             </div>
             <div className="mainpage-section mainpage-quotes-section" data-dark-theme>
                 <h1 className="mainpage-section-title">
@@ -45,15 +49,24 @@ function MainPage() {
                 </h1>
                 <div className="mainpage-recruit-group">
                     <h1 className="mainpage-recruit-group-title">17기</h1>
-                    <div className="mainpage-recruit-group-contents">0명</div>
+                    <div className="mainpage-recruit-group-contents">
+                        <span className="mainpage-recruit-group-contents-to">0명</span>
+                        <span className="mainpage-recruit-group-contents-link" data-deactivated>지원하기&rarr;</span>
+                    </div>
                 </div>
                 <div className="mainpage-recruit-group">
                     <h1 className="mainpage-recruit-group-title">18기</h1>
-                    <div className="mainpage-recruit-group-contents">0명</div>
+                    <div className="mainpage-recruit-group-contents">
+                        <span className="mainpage-recruit-group-contents-to">0명</span>
+                        <span className="mainpage-recruit-group-contents-link" data-deactivated>지원하기&rarr;</span>
+                    </div>
                 </div>
                 <div className="mainpage-recruit-group">
                     <h1 className="mainpage-recruit-group-title">19기</h1>
-                    <div className="mainpage-recruit-group-contents">10명</div>
+                    <div className="mainpage-recruit-group-contents">
+                        <span className="mainpage-recruit-group-contents-to">10명</span>
+                        <span className="mainpage-recruit-group-contents-link">지원하기&rarr;</span>
+                    </div>
                 </div>
             </div>
             <div className="mainpage-section mainpage-seminar-section" data-dark-theme>

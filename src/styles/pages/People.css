@@ -2,6 +2,10 @@
     padding-top: 140px;
 }
 
+.people-container {
+    min-height: 100vh;
+}
+
 .people-title {
     margin-bottom: 60px;
     font-size: 2rem;
@@ -39,6 +43,13 @@
 }
 
 .people-orgtable-image {
-    width: 80%;
+    width: 100%;
     align-self: center;
+}
+
+@media screen and (max-width: 720px) {
+    .people-orgtable-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

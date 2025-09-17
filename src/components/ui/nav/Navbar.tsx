@@ -11,14 +11,29 @@ const burgerClick = () => {
     }
 }
 
+const burgerDefault = () => {
+    let burger = document.querySelector(".navbar-burger")!!
+    const contents = document.querySelector(".cpu-menu")!!
+    contents.classList.remove("cpu-menu-expanded")
+    
+    for (const child of burger.children) {
+        child.classList.remove("navbar-burger-line-active")
+    }
+}
+
 function Navbar() {
     const navigation = useNavigate()
 
+    const moveTo = (dest: string) => {
+        burgerDefault()
+        navigation(dest)
+    }
+
     return (
         <div className="cpu-navbar">
-            <h1 className="cpu-logo" onClick={() => navigation("/")}>CPU</h1>
+            <h1 className="cpu-logo" onClick={() => moveTo("/")}>CPU</h1>
             <div className="cpu-menu">
-                <div className="cpu-menu-item" onClick={() => navigation("/people")}>
+                <div className="cpu-menu-item" onClick={() => moveTo("/people")}>
                     People
                     <span className="cpu-menu-item-underline"></span>
                 </div>
