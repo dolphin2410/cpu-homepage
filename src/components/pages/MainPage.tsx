@@ -68,21 +68,21 @@ function MainPage() {
                 <div className="mainpage-recruit-group">
                     <h1 className="mainpage-recruit-group-title">17기</h1>
                     <div className="mainpage-recruit-group-contents">
-                        <span className="mainpage-recruit-group-contents-to">0명</span>
+                        <span className="mainpage-recruit-group-contents-to">-명</span>
                         <span className="mainpage-recruit-group-contents-link" data-deactivated>지원하기&rarr;</span>
                     </div>
                 </div>
                 <div className="mainpage-recruit-group">
                     <h1 className="mainpage-recruit-group-title">18기</h1>
                     <div className="mainpage-recruit-group-contents">
-                        <span className="mainpage-recruit-group-contents-to">0명</span>
+                        <span className="mainpage-recruit-group-contents-to">-명</span>
                         <span className="mainpage-recruit-group-contents-link" data-deactivated>지원하기&rarr;</span>
                     </div>
                 </div>
                 <div className="mainpage-recruit-group">
                     <h1 className="mainpage-recruit-group-title">19기</h1>
                     <div className="mainpage-recruit-group-contents">
-                        <span className="mainpage-recruit-group-contents-to">10명</span>
+                        <span className="mainpage-recruit-group-contents-to">8명</span>
                         <span className="mainpage-recruit-group-contents-link">지원하기&rarr;</span>
                     </div>
                 </div>
