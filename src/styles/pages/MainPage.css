@@ -29,6 +29,21 @@
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
     padding: 10px 20px;
+    animation: wiggle-help infinite 2s ease-in-out;
+}
+
+@keyframes wiggle-help {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
 }
 
 .mainpage-downscroll-help::after {
