@@ -1,0 +1,44 @@
+.people {
+    padding-top: 140px;
+}
+
+.people-title {
+    margin-bottom: 60px;
+    font-size: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.people-title-text {
+    font-weight: 600;
+    position: relative;
+}
+
+.people-title-underline {
+    position: absolute;
+    height: 3px;
+    top: calc(100% + 3px);
+    left: 0;
+    background-color: black;
+    width: 100%;
+}
+
+.people-orgtable-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 30px;
+}
+
+.people-orgtable-title {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.people-orgtable-image {
+    width: 80%;
+    align-self: center;
+}

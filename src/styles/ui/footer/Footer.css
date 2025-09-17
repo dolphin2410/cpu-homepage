@@ -3,4 +3,6 @@
     padding: 40px 10%;
     font-size: 1.3rem;
     scroll-snap-align: start;
+    background-color: white;
+    color: black;
 }

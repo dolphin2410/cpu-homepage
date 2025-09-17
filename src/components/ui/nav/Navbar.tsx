@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import "styles/ui/nav/Navbar.css"
 
 const burgerClick = () => {
@@ -11,11 +12,13 @@ const burgerClick = () => {
 }
 
 function Navbar() {
+    const navigation = useNavigate()
+
     return (
         <div className="cpu-navbar">
-            <h1 className="cpu-logo">CPU</h1>
+            <h1 className="cpu-logo" onClick={() => navigation("/")}>CPU</h1>
             <div className="cpu-menu">
-                <div className="cpu-menu-item">
+                <div className="cpu-menu-item" onClick={() => navigation("/people")}>
                     People
                     <span className="cpu-menu-item-underline"></span>
                 </div>
