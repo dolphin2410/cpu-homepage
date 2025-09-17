@@ -26,7 +26,7 @@
     justify-self: center;
     align-items: center;
     bottom: 20px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgba(243, 243, 243, 0.396);
     border-radius: 10px;
     padding: 10px 20px;
     animation: wiggle-help infinite 2s ease-in-out;
